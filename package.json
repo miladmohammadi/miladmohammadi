@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My Portfolio",
   "keywords": [
     "Milad Mohamamdi",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@react-three/drei": "4.1.8",
     "@react-three/fiber": "6.0.14",
+    "gh-pages": "^4.0.0",
     "lerp": "1.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -26,8 +27,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://miladmohammadi.github.io/",
   "browserslist": [
     ">0.2%",
     "not dead",
